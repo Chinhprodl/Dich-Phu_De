@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { Job } from '../types';
 
-const apiKey = process.env.API_KEY;
+const apiKey = process.env.GEMINI_API_KEY;
 const ai = apiKey ? new GoogleGenAI({ apiKey }) : null;
 
 const CHUNK_SIZE = 75; // Number of subtitle entries per API call.
